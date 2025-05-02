@@ -1,0 +1,176 @@
+/* All */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend', sans-serif;
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* Navbar */
+.navbar {
+  height: 54px;
+  width: 100%;
+  background: linear-gradient(to right, #121212, #54151c);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: relative; /* hoặc fixed nếu bạn muốn nó bám trên đầu */
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-left img.logo {
+  height: 36px;
+  width: auto;
+}
+
+.navbar-right, .navbar-center{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+.navbar-right a:hover, .navbar-center a:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: all 0.5s ease;
+}
+
+.navbar .lang {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.navbar .divider {
+  margin: 0 8px;
+}
+i.fa-solid{
+  font-size: 14px;
+  color: #ffffff;
+}
+/* Navbar-divider*/
+.navbar-divider{
+  height: 0.5px;
+  background-color: #a6a6a6;
+  width: 100%;
+  margin: 0;
+}
+
+/* Flex1 */
+
+.Hero-section{
+  padding: 64px 0;
+  background: linear-gradient(to right, #121212, #54151c);
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* căn trái */
+  padding-left: 120px; /* đẩy vào từ bên trái */
+  gap: 24px;
+}
+
+.Hero-title{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  align-items: flex-start; /* căn trái */
+  padding-left: 120px; /* đẩy vào từ bên trái */
+}
+
+.Search-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.search-bar{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: left;
+}
+
+.search-bar .city{
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.search-bar i{
+  color: #414042;
+  background-color: white;
+}
+
+.search-bar input{
+  padding: 12px 16px;
+  width: 600px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-button{
+  padding: 12px 16px;
+  color: #fff;
+  background-color: #ed1b2f;
+  border-radius: 8px;
+  width: 130px;
+  border: 0.5px solid #333;
+}
+
+.search-button i{
+  color: #ccc;
+  background-color: transparent;
+}
+.search-button:hover {
+  background-color: #cc001f;
+  transition: all 0.3s ease-in-out;
+}
+
+.Suggestion{
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #bbb}
+
+.Suggestion span{
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.Suggestion button{
+  background-color: #121212;
+  color: white;
+  border-radius: 999px;
+  padding: 8px 16px;
+  border: 1px solid #777;
+  font-size: 14px;
+}
+
+.Suggestion button:hover{
+  background-color: #333;
+  transition: all 0.3s ease;
+}

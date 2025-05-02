@@ -1,0 +1,72 @@
+.posted-jobs {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+  }
+  
+  .job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+.pinned{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+}
+.posted-jobs h2 {
+    color: #333;
+  }
+  .add-job-btn {
+    background-color: #1c54ff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  .add-job-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  } 
+  .add-job-btn:focus {
+    outline: none;
+  }
+  .job-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    /*Độ trong suốt*/
+    opacity: 0.8;
+    border: 1px solid #333;
+  }
+  
+  .job-card h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .job-card .trash-icon {
+    color: red;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .job-card .trash-icon:hover {
+    color: #a10000;
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+  }
+  .navbar-divider {
+    margin: 8px 8px;
+    padding: 0 10px;
+  }

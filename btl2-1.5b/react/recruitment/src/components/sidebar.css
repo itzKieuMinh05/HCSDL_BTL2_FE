@@ -1,0 +1,45 @@
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #111, #333);
+  }
+  
+  .logo {
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+
+  nav ul {
+    list-style: none;
+    padding: 10px 0;
+  }
+  
+  nav li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  nav .active {
+    background: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  nav .active:hover{
+    background: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  nav ul li{
+    color: #ddd;
+  }
+  nav ul li:hover{
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
